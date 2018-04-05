@@ -7,14 +7,19 @@ Save the songs played on an iHeartRadio station to a database
 ## Use
 Once you have dowloaded the repository and installed the required software, follow these steps to scrape the songs played from your desired iHeartRadio station
   ### Win7
-  Open a command window, navigate to your repository location and type the following
-  
-  `node scrape_iHeartRadio.js url db ScrapeDelay`
+  Open a command window, navigate to your repository location and type the following:
+
+  `node scrape_iHeartRadio.js url database scrapeDelay`
   Where:
-  * url         == iHeartRadio station html link string
-  * db          == database file name string
-  * ScrapeDelay == Load Frequency of iHeartRadio station in minutes
-  
+  * scrape_iHeartRadio.js == The script!
+  * url                   == iHeartRadio station html link string
+  * database              == database file name string
+  * scrapeDelay           == Load Frequency of iHeartRadio station in minutes
+
   Example:
+
+  `node scrape_iHeartRadio.js https://www.iheart.com/live/smells-like-the-90s-6437/ iHeartRadioPlaylist.db 5`
   
-  `node scrape_iHeartRadio.js https://www.iheart.com/live/all-my-jams-4433/ iHeartRadioPlaylist.db 1`
+  #### OR
+  
+  Create a new or edit the existing batch file, [scrape_iHeartRadio.bat](scrape_iHeartRadio.bat), navigate to that folder in Windows Explorer and double-click or execute the batch file
