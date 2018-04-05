@@ -203,7 +203,7 @@ function insertIntoDatabase(newSongs){
           });
 
           db.serialize(() => {
-            db.each(`SELECT rowid, url, Artist, Song, Link, DateCrawled FROM Songs`, (err, row) => {
+            db.each(`SELECT rowid, Artist, Song, Link, DateCrawled FROM Songs`, (err, row) => {
               if (err) {
                 console.error(err.message);
               }
