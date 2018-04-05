@@ -3,7 +3,9 @@ Save the songs played on an iHeartRadio station to a database
 ## Required Software
 * Node.js https://nodejs.org/en/
 * Google Chrome Puppeteer https://github.com/GoogleChrome/puppeteer
+  * install command: `npm i puppeteer`
 * Sqlite https://www.npmjs.com/package/sqlite3
+  * install command: `npm install sqlite3`
 ## Use
 Once you have dowloaded the repository and installed the required software, follow these steps to scrape the songs played from your desired iHeartRadio station
 ### Win7
