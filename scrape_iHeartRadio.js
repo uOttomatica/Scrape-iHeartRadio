@@ -51,7 +51,7 @@ async function scrape_iHeartRadio(url) {
     });
     const page = await browser.newPage();
     await page.goto(url, {
-      timeout: 0
+      timeout: (scrapeDelay - 100)
     });
 
     // Most of the code here based off of link below:
